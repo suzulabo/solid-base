@@ -1,0 +1,39 @@
+{
+  "name": "@suzulabo/solid-base",
+  "version": "0.0.0",
+  "description": "Base UI Components of SolidJS",
+  "homepage": "https://github.com/suzulabo/solid-base#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suzulabo/solid-base.git"
+  },
+  "author": "Kenji Suzuki",
+  "keywords": [
+    "SolidJS"
+  ],
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "test": "vitest run",
+    "clean": "pnpm -r run clean",
+    "build": "pnpm run --filter !example build && pnpm run --filter example build"
+  },
+  "devDependencies": {
+    "@suzulabo/eslint-config": "file:../../../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz",
+    "@suzulabo/tsconfig": "^0.0.1",
+    "eslint-plugin-solid": "^0.8.0"
+  },
+  "dependencies": {
+    "solid-js": "^1.6.2"
+  }
+}
