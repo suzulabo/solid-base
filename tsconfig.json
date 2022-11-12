@@ -1,11 +1,3 @@
 {
-  "extends": "@tsconfig/node16-strictest",
-  "compilerOptions": {
-    "moduleResolution": "nodenext",
-    "noEmit": true,
-
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": ["ESNext"]
-  }
+  "extends": "@suzulabo/tsconfig"
 }

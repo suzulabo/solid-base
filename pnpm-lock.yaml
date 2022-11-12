@@ -4,19 +4,21 @@ importers:
 
   .:
     specifiers:
-      '@suzulabo/code-config-typescript': ^0.0.2
-      '@tsconfig/node16-strictest': ^1.0.4
+      '@suzulabo/eslint-config': ^0.0.2
+      '@suzulabo/prettier-config': ^0.0.2
+      '@suzulabo/tsconfig': ^0.0.1
       '@typescript-eslint/eslint-plugin': ^5.42.0
       '@typescript-eslint/parser': ^5.42.0
-      eslint: ^8.26.0
+      eslint: ^8.27.0
       eslint-config-prettier: ^8.5.0
       eslint-import-resolver-typescript: ^3.5.2
       eslint-plugin-import: ^2.26.0
       prettier: ^2.7.1
       typescript: ^4.8.4
     devDependencies:
-      '@suzulabo/code-config-typescript': 0.0.2_uktbjbfbunvk4udrwrux7p2nti
-      '@tsconfig/node16-strictest': 1.0.4
+      '@suzulabo/eslint-config': 0.0.2_x5e2iohrfge7wd7wqkwm23iyba
+      '@suzulabo/prettier-config': 0.0.2_prettier@2.7.1
+      '@suzulabo/tsconfig': 0.0.1_typescript@4.8.4
       '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
       '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
       eslint: 8.27.0
@@ -98,8 +100,8 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /@suzulabo/code-config-typescript/0.0.2_uktbjbfbunvk4udrwrux7p2nti:
-    resolution: {integrity: sha512-QkERr/igdwqSMRoWfj4Hlu4OknJsau8Bg2gTZkxf9Vv2DzDn7P/SO/oXpO8HpuEqslyGchbLF1hmrCCuZuH9ww==}
+  /@suzulabo/eslint-config/0.0.2_x5e2iohrfge7wd7wqkwm23iyba:
+    resolution: {integrity: sha512-DIH9NLSyJmar12HwPKVuGy8oI6DD4pETD4gf4YRKBofwG0hM8QbYAYISLeLcNieT+NLZDI2xwWYAjLme3vAdlw==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.42.0
       '@typescript-eslint/parser': ^5.42.0
@@ -108,6 +110,7 @@ packages:
       eslint-import-resolver-typescript: ^3.5.2
       eslint-plugin-import: ^2.26.0
       prettier: ^2.7.1
+      typescript: ^4.8.4
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
       '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
@@ -116,10 +119,23 @@ packages:
       eslint-import-resolver-typescript: 3.5.2_dcpv4nbdr5ks2h5677xdltrk6e
       eslint-plugin-import: 2.26.0_kz72iuqidfi7igifoeyyxfa2au
       prettier: 2.7.1
+      typescript: 4.8.4
     dev: true
 
-  /@tsconfig/node16-strictest/1.0.4:
-    resolution: {integrity: sha512-kp6/DuAoKzHVv5U+p0uOesYbjrEvrYVNdQMl163a+yXXUv9twabvkCGEn3pmVxKXB45JU5MPGolDDWnONZL5ZQ==}
+  /@suzulabo/prettier-config/0.0.2_prettier@2.7.1:
+    resolution: {integrity: sha512-WrLSkSH9sSoz3N678Og5vtO82leNmRWm8I3MXqbuJmm2KVaGRzWuK1LTgIDZAGaZj5bDeQ/0jETMqVLQeZOMow==}
+    peerDependencies:
+      prettier: ^2.7.1
+    dependencies:
+      prettier: 2.7.1
+    dev: true
+
+  /@suzulabo/tsconfig/0.0.1_typescript@4.8.4:
+    resolution: {integrity: sha512-FwwZXwjI9guSkdPS6w9EMtRyqJIZc5PtkZkUXk/9h8/dRiZlJ2IFWlC7EXuEgSWRieBFxV1yubXJq3lUanZjgA==}
+    peerDependencies:
+      typescript: ^4.8.4
+    dependencies:
+      typescript: 4.8.4
     dev: true
 
   /@types/json-schema/7.0.11:
