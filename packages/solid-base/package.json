@@ -29,9 +29,7 @@
     "storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.18.6",
     "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/html": "^6.5.13",
     "@suzulabo/eslint-config": "file:../../../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz",
     "@suzulabo/tsconfig": "^0.0.1",

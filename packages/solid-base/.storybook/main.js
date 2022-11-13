@@ -3,6 +3,6 @@ module.exports = {
   addons: ['@storybook/addon-essentials'],
   babel: async (options) => ({
     ...options,
-    presets: ['solid', '@babel/preset-typescript'],
+    presets: ['solid'],
   }),
 };
