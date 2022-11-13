@@ -28,8 +28,8 @@ importers:
     specifiers:
       '@storybook/addon-essentials': ^6.5.13
       '@storybook/html': ^6.5.13
-      '@suzulabo/eslint-config': file:../../../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz
-      '@suzulabo/tsconfig': ^0.0.1
+      '@suzulabo/eslint-config': 0.0.3-test.0
+      '@suzulabo/tsconfig': 0.0.2-test.0
       babel-preset-solid: ^1.6.2
       eslint-plugin-solid: ^0.8.0
       solid-js: ^1.6.2
@@ -38,8 +38,8 @@ importers:
     devDependencies:
       '@storybook/addon-essentials': 6.5.13_@storybook+html@6.5.13
       '@storybook/html': 6.5.13
-      '@suzulabo/eslint-config': file:../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz_eslint-plugin-solid@0.8.0
-      '@suzulabo/tsconfig': 0.0.1
+      '@suzulabo/eslint-config': 0.0.3-test.0_eslint-plugin-solid@0.8.0
+      '@suzulabo/tsconfig': 0.0.2-test.0
       babel-preset-solid: 1.6.2
       eslint-plugin-solid: 0.8.0
 
@@ -3846,6 +3846,22 @@ packages:
       resolve-from: 5.0.0
     dev: true
 
+  /@suzulabo/eslint-config/0.0.3-test.0_eslint-plugin-solid@0.8.0:
+    resolution: {integrity: sha512-N8QQwRxkxBhYXk8GlDwF7zo8OfpvZXYX5X6f95u0i/T8W3pCr7ZFXFnIEZgMu9SPR+8xAVKtod/K9adsV4BJ/g==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.42.0
+      '@typescript-eslint/parser': ^5.42.0
+      eslint: ^8.26.0
+      eslint-config-prettier: ^8.5.0
+      eslint-import-resolver-typescript: ^3.5.2
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-solid: ^0.8.0
+      prettier: ^2.7.1
+      typescript: ^4.8.4
+    dependencies:
+      eslint-plugin-solid: 0.8.0
+    dev: true
+
   /@suzulabo/prettier-config/0.0.2_prettier@2.7.1:
     resolution: {integrity: sha512-WrLSkSH9sSoz3N678Og5vtO82leNmRWm8I3MXqbuJmm2KVaGRzWuK1LTgIDZAGaZj5bDeQ/0jETMqVLQeZOMow==}
     peerDependencies:
@@ -3854,8 +3870,8 @@ packages:
       prettier: 2.7.1
     dev: true
 
-  /@suzulabo/tsconfig/0.0.1:
-    resolution: {integrity: sha512-FwwZXwjI9guSkdPS6w9EMtRyqJIZc5PtkZkUXk/9h8/dRiZlJ2IFWlC7EXuEgSWRieBFxV1yubXJq3lUanZjgA==}
+  /@suzulabo/tsconfig/0.0.2-test.0:
+    resolution: {integrity: sha512-jWoqxVqyWyAc+rDIfdX+DCJv0WMRTYACgZozjtq5OS97U+TbUB54JaHs9Saq8xcr82zQcN9bG6ZQHLq5rR+k1w==}
     peerDependencies:
       typescript: ^4.8.4
     dev: true
@@ -11391,23 +11407,4 @@ packages:
 
   /zwitch/1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
-    dev: true
-
-  file:../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz_eslint-plugin-solid@0.8.0:
-    resolution: {integrity: sha512-BabGsa3slIF6H/rdkGlazdx34LINsqG4kbzM0aM08R7d8FgJN0ud9WL3bVj8g37cyb5eKymAXV0cnN0vsCG/PA==, tarball: file:../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz}
-    id: file:../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz
-    name: '@suzulabo/eslint-config'
-    version: 0.0.3
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.42.0
-      '@typescript-eslint/parser': ^5.42.0
-      eslint: ^8.26.0
-      eslint-config-prettier: ^8.5.0
-      eslint-import-resolver-typescript: ^3.5.2
-      eslint-plugin-import: ^2.26.0
-      eslint-plugin-solid: ^0.8.0
-      prettier: ^2.7.1
-      typescript: ^4.8.4
-    dependencies:
-      eslint-plugin-solid: 0.8.0
     dev: true

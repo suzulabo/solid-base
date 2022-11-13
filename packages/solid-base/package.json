@@ -31,8 +31,8 @@
   "devDependencies": {
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/html": "^6.5.13",
-    "@suzulabo/eslint-config": "file:../../../code-config/packages/eslint-config/suzulabo-eslint-config-0.0.3.tgz",
-    "@suzulabo/tsconfig": "^0.0.1",
+    "@suzulabo/eslint-config": "0.0.3-test.0",
+    "@suzulabo/tsconfig": "0.0.2-test.0",
     "babel-preset-solid": "^1.6.2",
     "eslint-plugin-solid": "^0.8.0"
   },
