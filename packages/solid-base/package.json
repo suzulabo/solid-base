@@ -37,6 +37,8 @@
     "eslint-plugin-solid": "^0.8.0"
   },
   "dependencies": {
-    "solid-js": "^1.6.2"
+    "solid-js": "^1.6.2",
+    "solid-styled-components": "^0.28.5",
+    "the-new-css-reset": "^1.7.3"
   }
 }
