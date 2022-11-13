@@ -1,7 +1,5 @@
 /** @type {import('eslint').Linter.Config} */
-const config = {
+module.exports = {
   root: true,
   extends: ['@suzulabo/eslint-config/solidjs'],
 };
-
-module.exports = config;
