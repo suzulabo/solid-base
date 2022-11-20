@@ -6,6 +6,7 @@ declare module 'solid-styled-components' {
       text: string;
       background: string;
       border: string;
+      hover: string;
     };
   }
 }

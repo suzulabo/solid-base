@@ -10,10 +10,18 @@ const Button = styled('button')(() => {
     'padding': '10px 20px',
     'textAlign': 'center',
     'width': 'max-content',
+
     '&:active': {
       position: 'relative',
       top: '1px',
       left: '1px',
+    },
+
+    '@media (hover: hover)': {
+      '&:hover:not(:disabled)': {
+        backgroundColor: theme.colors.hover,
+        cursor: 'pointer',
+      },
     },
   };
 });

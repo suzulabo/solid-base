@@ -7,6 +7,7 @@ const lightTheme: DefaultTheme = {
     text: '#212121',
     background: '#ffffff',
     border: '#212121',
+    hover: '#f5f5f5',
   },
 };
 
