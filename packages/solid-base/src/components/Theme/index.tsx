@@ -4,9 +4,9 @@ import type { ParentComponent } from 'solid-js';
 
 const lightTheme: DefaultTheme = {
   colors: {
-    text: '#333333',
+    text: '#212121',
     background: '#ffffff',
-    border: '#333333',
+    border: '#212121',
   },
 };
 

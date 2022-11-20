@@ -11,6 +11,7 @@ const BaseStyles = () => {
         color: theme.colors.text,
         backgroundColor: theme.colors.background,
         fontSize: '16px',
+        fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
       },
     },
   ]);
