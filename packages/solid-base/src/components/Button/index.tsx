@@ -1,7 +1,11 @@
-import { styled } from 'solid-styled-components';
+import { styled, useTheme } from 'solid-styled-components';
 
-const Button = styled('button')(() => ({
-  border: '1px solid black',
-}));
+const Button = styled('button')(() => {
+  const theme = useTheme();
+
+  return {
+    border: `1px solid ${theme.colors.border}`,
+  };
+});
 
 export default Button;

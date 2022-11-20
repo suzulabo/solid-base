@@ -1,8 +1,15 @@
-import { createComponent } from 'solid-js/web';
-import StorybookRoot from '../src/storybook/StorybookRoot';
+import BaseStyles from '../src/components/BaseStyle';
+import Theme from '../src/components/Theme';
 
 export const decorators = [
   (Story) => {
-    return createComponent(StorybookRoot, { children: Story });
+    return (
+      <div>
+        <Theme>
+          <BaseStyles />
+          <Story />
+        </Theme>
+      </div>
+    );
   },
 ];
