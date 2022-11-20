@@ -26,6 +26,7 @@
     "test": "vitest run",
     "clean": "rm -r dist",
     "build": "tsc --build tsconfig.build.json",
+    "clean:build": "pnpm run clean && pnpm  run build",
     "storybook": "start-storybook -p 6006",
     "dev": "pnpm run storybook"
   },
