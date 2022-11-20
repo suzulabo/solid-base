@@ -4,13 +4,12 @@
     "node": ">=16"
   },
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "test": "vitest run",
-    "clean": "pnpm -r run clean",
-    "build": "pnpm run --filter !example build && pnpm run --filter example build"
+    "test": "pnpm -r run test",
+    "build": "pnpm -r run build"
   },
   "devDependencies": {
     "@suzulabo/prettier-config": "^0.0.2",
