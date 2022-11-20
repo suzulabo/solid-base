@@ -5,5 +5,5 @@ export default {
 };
 
 export const Default = () => {
-  return <Button>neko</Button>;
+  return <Button>Button</Button>;
 };
