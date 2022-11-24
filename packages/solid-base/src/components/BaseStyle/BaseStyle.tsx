@@ -1,8 +1,10 @@
-import { createGlobalStyles, useTheme } from 'solid-styled-components';
+import { createGlobalStyles } from 'solid-styled-components';
 import resetCss from 'the-new-css-reset/css/reset.css';
 
+import { getTheme } from '../Theme/theme';
+
 const BaseStyles = () => {
-  const theme = useTheme();
+  const theme = getTheme();
 
   const Styles = createGlobalStyles([
     resetCss,

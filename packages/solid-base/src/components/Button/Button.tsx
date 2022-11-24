@@ -1,7 +1,9 @@
-import { styled, useTheme } from 'solid-styled-components';
+import { styled } from 'solid-styled-components';
+
+import { getTheme } from '../Theme/theme';
 
 const Button = styled('button')(() => {
-  const theme = useTheme();
+  const theme = getTheme();
 
   return {
     'display': 'inline-block',
