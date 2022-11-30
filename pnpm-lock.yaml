@@ -36,7 +36,6 @@ importers:
       storybook-dark-mode: ^1.1.2
       the-new-css-reset: ^1.7.3
     dependencies:
-      solid-js: 1.6.2
       solid-styled-components: 0.28.5_solid-js@1.6.2
       the-new-css-reset: 1.7.3
     devDependencies:
@@ -45,6 +44,7 @@ importers:
       '@suzulabo/tsconfig': 0.0.2-test.0
       babel-preset-solid: 1.6.2
       eslint-plugin-solid: 0.8.0
+      solid-js: 1.6.2
       storybook-dark-mode: 1.1.2
 
 packages:
@@ -4252,7 +4252,6 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
-    dev: false
 
   /currently-unhandled/0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
@@ -8504,7 +8503,6 @@ packages:
     resolution: {integrity: sha512-AZBsj+Yn1xliniTTeuQKG9V7VQVkQ8lZmSKvBjpcVSoZeF7nvt/N5f7Kcsx6QSufioa2YgvBjkIiA0cM0qhotw==}
     dependencies:
       csstype: 3.1.1
-    dev: false
 
   /solid-styled-components/0.28.5_solid-js@1.6.2:
     resolution: {integrity: sha512-vwTcdp76wZNnESIzB6rRZ3U55NgcSAQXCiiRIiEFhxTFqT0bEh/warNT1qaRZu4OkAzrBkViOngF35ktI8sc4A==}

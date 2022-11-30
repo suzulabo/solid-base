@@ -33,11 +33,14 @@
     "@suzulabo/tsconfig": "0.0.2-test.0",
     "babel-preset-solid": "^1.6.2",
     "eslint-plugin-solid": "^0.8.0",
+    "solid-js": "^1.6.2",
     "storybook-dark-mode": "^1.1.2"
   },
   "dependencies": {
-    "solid-js": "^1.6.2",
     "solid-styled-components": "^0.28.5",
     "the-new-css-reset": "^1.7.3"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.2"
   }
 }
