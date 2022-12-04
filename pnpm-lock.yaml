@@ -28,6 +28,8 @@ importers:
     specifiers:
       '@solidjs/meta': ^0.28.0
       '@solidjs/router': ^0.5.0
+      '@suzulabo/eslint-config': 0.0.3-test.0
+      '@suzulabo/solid-base': link:../solid-base
       solid-js: ^1.6.2
       solid-start: ^0.2.0
       solid-start-static: ^0.2.7
@@ -37,10 +39,12 @@ importers:
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.2
       '@solidjs/router': 0.5.1_solid-js@1.6.2
+      '@suzulabo/solid-base': link:../solid-base
       solid-js: 1.6.2
       solid-start: 0.2.7_i2cnpwj3ojjdnkycik5yjsstli
       undici: 5.13.0
     devDependencies:
+      '@suzulabo/eslint-config': 0.0.3-test.0_typescript@4.9.3
       solid-start-static: 0.2.7_abkk3qtcvs2j63nsbym5offimi
       typescript: 4.9.3
       vite: 3.2.4
@@ -2515,6 +2519,22 @@ packages:
       typescript: ^4.8.4
     dependencies:
       eslint-plugin-solid: 0.8.0
+    dev: true
+
+  /@suzulabo/eslint-config/0.0.3-test.0_typescript@4.9.3:
+    resolution: {integrity: sha512-N8QQwRxkxBhYXk8GlDwF7zo8OfpvZXYX5X6f95u0i/T8W3pCr7ZFXFnIEZgMu9SPR+8xAVKtod/K9adsV4BJ/g==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.42.0
+      '@typescript-eslint/parser': ^5.42.0
+      eslint: ^8.26.0
+      eslint-config-prettier: ^8.5.0
+      eslint-import-resolver-typescript: ^3.5.2
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-solid: ^0.8.0
+      prettier: ^2.7.1
+      typescript: ^4.8.4
+    dependencies:
+      typescript: 4.9.3
     dev: true
 
   /@suzulabo/prettier-config/0.0.2_prettier@2.7.1:

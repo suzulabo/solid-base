@@ -1,4 +1,5 @@
 import { createSignal } from 'solid-js';
+import { isServer } from 'solid-js/web';
 
 const lightTheme = {
   colors: {
@@ -26,38 +27,64 @@ type ThemeInfo = {
   mode: ThemeMode;
 };
 
-const preferDarkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
-
-preferDarkModeMedia.addEventListener('change', () => {
-  if (getThemeInfo().mode == 'auto') {
-    setThemeInfo({
-      theme: isPreferDark() ? darkTheme : lightTheme,
-      mode: 'auto',
-    });
-  }
-});
-
-const isPreferDark = () => {
-  return preferDarkModeMedia.matches;
+type Api = {
+  setThemeMode: (mode: ThemeMode) => void;
+  getTheme: () => Theme;
 };
 
-const [getThemeInfo, setThemeInfo] = createSignal<ThemeInfo>({
-  theme: isPreferDark() ? darkTheme : lightTheme,
-  mode: 'auto',
-});
-
-export const setThemeMode = (mode: ThemeMode) => {
-  switch (mode) {
-    case 'light':
-      setThemeInfo({ theme: lightTheme, mode });
-      break;
-    case 'dark':
-      setThemeInfo({ theme: darkTheme, mode });
-      break;
-    case 'auto':
-      setThemeInfo({ theme: isPreferDark() ? darkTheme : lightTheme, mode });
-      break;
+const api = ((): Api => {
+  if (isServer) {
+    return {
+      setThemeMode: () => {
+        return;
+      },
+      getTheme: () => darkTheme,
+    };
   }
-};
 
-export const getTheme = () => getThemeInfo().theme;
+  const preferDarkModeMedia = window.matchMedia('(prefers-color-scheme: dark)');
+
+  preferDarkModeMedia.addEventListener('change', () => {
+    if (getThemeInfo().mode == 'auto') {
+      setThemeInfo({
+        theme: isPreferDark() ? darkTheme : lightTheme,
+        mode: 'auto',
+      });
+    }
+  });
+
+  const isPreferDark = () => {
+    if (isServer) {
+      return true;
+    }
+    return preferDarkModeMedia.matches;
+  };
+
+  const [getThemeInfo, setThemeInfo] = createSignal<ThemeInfo>({
+    theme: isPreferDark() ? darkTheme : lightTheme,
+    mode: 'auto',
+  });
+
+  const setThemeMode = (mode: ThemeMode) => {
+    switch (mode) {
+      case 'light':
+        setThemeInfo({ theme: lightTheme, mode });
+        break;
+      case 'dark':
+        setThemeInfo({ theme: darkTheme, mode });
+        break;
+      case 'auto':
+        setThemeInfo({ theme: isPreferDark() ? darkTheme : lightTheme, mode });
+        break;
+    }
+  };
+
+  const getTheme = () => {
+    return getThemeInfo().theme;
+  };
+
+  return { setThemeMode, getTheme };
+})();
+
+export const setThemeMode = api.setThemeMode;
+export const getTheme = api.getTheme;

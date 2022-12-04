@@ -3,7 +3,7 @@ import resetCss from 'the-new-css-reset/css/reset.css';
 
 import { getTheme } from '../Theme/theme';
 
-const BaseStyles = () => {
+const BaseStyle = () => {
   const makeGlobalStyle = () => {
     const theme = getTheme();
     return {
@@ -19,4 +19,4 @@ const BaseStyles = () => {
   return <>{createGlobalStyles([resetCss, makeGlobalStyle()])}</>;
 };
 
-export default BaseStyles;
+export default BaseStyle;
