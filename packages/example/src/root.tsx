@@ -2,7 +2,6 @@
 import { BaseStyle } from '@suzulabo/solid-base';
 import { Suspense } from 'solid-js';
 import {
-  A,
   Body,
   ErrorBoundary,
   FileRoutes,
@@ -14,13 +13,11 @@ import {
   Title,
 } from 'solid-start';
 
-import './root.css';
-
 export default function Root() {
   return (
-    <Html lang="en">
+    <Html>
       <Head>
-        <Title>SolidStart - Bare</Title>
+        <Title>solid-base example</Title>
         <Meta charset="utf-8" />
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
         <BaseStyle />
@@ -28,8 +25,6 @@ export default function Root() {
       <Body>
         <Suspense>
           <ErrorBoundary>
-            <A href="/">Index</A>
-            <A href="/about">About</A>
             <Routes>
               <FileRoutes />
             </Routes>
