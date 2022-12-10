@@ -18,26 +18,27 @@
   "engines": {
     "node": ">=16"
   },
+  "main": "src/index.ts",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "clean": "rm -r dist",
-    "build": "tsc --build tsconfig.build.json",
-    "clean:build": "pnpm run clean && pnpm  run build",
     "storybook": "start-storybook -p 6006",
     "dev": "pnpm run storybook"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^6.5.13",
     "@storybook/html": "^6.5.13",
     "@suzulabo/eslint-config": "0.0.3-test.0",
     "@suzulabo/tsconfig": "0.0.2-test.0",
     "babel-preset-solid": "^1.6.2",
-    "eslint-plugin-solid": "^0.8.0"
+    "eslint-plugin-solid": "^0.8.0",
+    "solid-js": "^1.6.2",
+    "storybook-dark-mode": "^1.1.2"
   },
   "dependencies": {
-    "solid-js": "^1.6.2",
     "solid-styled-components": "^0.28.5",
     "the-new-css-reset": "^1.7.3"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.6.2"
   }
 }

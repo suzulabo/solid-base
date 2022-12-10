@@ -1,6 +1,6 @@
 module.exports = {
   stories: ['../src/components/**/*.stories.tsx'],
-  addons: ['@storybook/addon-essentials'],
+  addons: ['storybook-dark-mode'],
 
   /*
   It won't work
