@@ -16,28 +16,29 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=16"
+    "node": "=16"
   },
   "main": "src/index.ts",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "storybook": "start-storybook -p 6006",
-    "dev": "pnpm run storybook"
+    "dev": "pnpm run storybook",
+    "build": "build-storybook -o dist"
   },
   "devDependencies": {
-    "@storybook/html": "^6.5.13",
-    "@suzulabo/eslint-config": "0.0.3-test.0",
-    "@suzulabo/tsconfig": "0.0.2-test.0",
-    "babel-preset-solid": "^1.6.2",
-    "eslint-plugin-solid": "^0.8.0",
-    "solid-js": "^1.6.2",
-    "storybook-dark-mode": "^1.1.2"
+    "@storybook/html": "^6.5.14",
+    "@suzulabo/eslint-config": "0.0.3",
+    "@suzulabo/tsconfig": "0.0.2",
+    "babel-preset-solid": "^1.6.3",
+    "eslint-plugin-solid": "^0.9.1",
+    "solid-js": "1.6.3",
+    "storybook-dark-mode": "^2.0.4"
   },
   "dependencies": {
     "the-new-css-reset": "^1.7.3"
   },
   "peerDependencies": {
-    "solid-js": "^1.6.2"
+    "solid-js": ">=1.6"
   }
 }
