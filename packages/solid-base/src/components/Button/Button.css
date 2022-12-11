@@ -15,7 +15,7 @@ button:active {
 
 @media (hover: hover) {
   button:hover:not(:disabled) {
-    background-color: var(--color-background);
+    background-color: var(--color-hover);
     cursor: pointer;
   }
 }
