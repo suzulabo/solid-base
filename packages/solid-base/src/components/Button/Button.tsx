@@ -1,31 +1,9 @@
-import { styled } from 'solid-styled-components';
+import './Button.css';
 
-import { getTheme } from '../Theme/theme';
+import type { ParentComponent } from 'solid-js';
 
-const Button = styled('button')(() => {
-  const theme = getTheme();
-
-  return {
-    'display': 'inline-block',
-    'border': `2px solid ${theme.colors.border}`,
-    'borderRadius': '10px',
-    'padding': '10px 20px',
-    'textAlign': 'center',
-    'width': 'max-content',
-
-    '&:active': {
-      position: 'relative',
-      top: '1px',
-      left: '1px',
-    },
-
-    '@media (hover: hover)': {
-      '&:hover:not(:disabled)': {
-        backgroundColor: theme.colors.hover,
-        cursor: 'pointer',
-      },
-    },
-  };
-});
+const Button: ParentComponent = (props) => {
+  return <button {...props}>{props.children}</button>;
+};
 
 export default Button;

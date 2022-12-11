@@ -1,5 +1,7 @@
-import { styled } from 'solid-styled-components';
+import type { ParentComponent } from 'solid-js';
 
-const Box = styled('div')({});
+const Box: ParentComponent = (props) => {
+  return <div {...props}>{props.children}</div>;
+};
 
 export default Box;

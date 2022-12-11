@@ -57,11 +57,9 @@ importers:
       babel-preset-solid: ^1.6.2
       eslint-plugin-solid: ^0.8.0
       solid-js: ^1.6.2
-      solid-styled-components: ^0.28.5
       storybook-dark-mode: ^1.1.2
       the-new-css-reset: ^1.7.3
     dependencies:
-      solid-styled-components: 0.28.5_solid-js@1.6.2
       the-new-css-reset: 1.7.3
     devDependencies:
       '@storybook/html': 6.5.13
@@ -6151,14 +6149,6 @@ packages:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
 
-  /goober/2.1.11_csstype@3.1.1:
-    resolution: {integrity: sha512-5SS2lmxbhqH0u9ABEWq7WPU69a4i2pYcHeCxqaNq6Cw3mnrF0ghWNM4tEGid4dKy8XNIAUbuThuozDHHKJVh3A==}
-    peerDependencies:
-      csstype: ^3.0.10
-    dependencies:
-      csstype: 3.1.1
-    dev: false
-
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
@@ -9245,16 +9235,6 @@ packages:
       wait-on: 6.0.1_debug@4.3.4
     transitivePeerDependencies:
       - supports-color
-
-  /solid-styled-components/0.28.5_solid-js@1.6.2:
-    resolution: {integrity: sha512-vwTcdp76wZNnESIzB6rRZ3U55NgcSAQXCiiRIiEFhxTFqT0bEh/warNT1qaRZu4OkAzrBkViOngF35ktI8sc4A==}
-    peerDependencies:
-      solid-js: ^1.4.4
-    dependencies:
-      csstype: 3.1.1
-      goober: 2.1.11_csstype@3.1.1
-      solid-js: 1.6.2
-    dev: false
 
   /source-list-map/2.0.1:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
