@@ -1,0 +1,21 @@
+button {
+  display: inline-block;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  width: max-content;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+@media (hover: hover) {
+  button:hover:not(:disabled) {
+    background-color: var(--color-background);
+    cursor: pointer;
+  }
+}

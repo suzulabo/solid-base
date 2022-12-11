@@ -1,6 +1,6 @@
 import addons from '@storybook/addons';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
-import BaseStyles from '../src/components/BaseStyle/BaseStyle';
+import BaseStyle from '../src/components/BaseStyle/BaseStyle';
 import { setThemeMode } from '../src/components/Theme/theme';
 
 const channel = addons.getChannel();
@@ -13,7 +13,7 @@ export const decorators = [
 
     return (
       <div>
-        <BaseStyles />
+        <BaseStyle />
         <Story />
       </div>
     );
