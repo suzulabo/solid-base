@@ -4,7 +4,9 @@ importers:
 
   .:
     specifiers:
+      '@suzulabo/eslint-config': 0.0.4-test.1
       '@suzulabo/prettier-config': ^0.0.2
+      '@suzulabo/tsconfig': ^0.0.2
       '@typescript-eslint/eslint-plugin': ^5.46.0
       '@typescript-eslint/parser': ^5.46.0
       eslint: ^8.29.0
@@ -14,7 +16,9 @@ importers:
       prettier: ^2.8.1
       typescript: ^4.9.4
     devDependencies:
+      '@suzulabo/eslint-config': 0.0.4-test.1_j4bfmrb45ysinnemychwtgjwra
       '@suzulabo/prettier-config': 0.0.2_prettier@2.8.1
+      '@suzulabo/tsconfig': 0.0.2_typescript@4.9.4
       '@typescript-eslint/eslint-plugin': 5.46.0_5mle7isnkfgjmrghnnczirv6iy
       '@typescript-eslint/parser': 5.46.0_ha6vam6werchizxrnqvarmz2zu
       eslint: 8.29.0
@@ -28,15 +32,13 @@ importers:
     specifiers:
       '@solidjs/meta': ^0.28.2
       '@solidjs/router': ^0.5.1
-      '@suzulabo/eslint-config': 0.0.4-test.1
       '@suzulabo/solid-base': link:../solid-base
       eslint-plugin-solid: ^0.9.1
       solid-js: ^1.6.4
       solid-start: ^0.2.7
       solid-start-static: ^0.2.7
-      typescript: ^4.9.4
       undici: ^5.14.0
-      vite: ^4.0.0
+      vite: 4.0.0
     dependencies:
       '@solidjs/meta': 0.28.2_solid-js@1.6.4
       '@solidjs/router': 0.5.1_solid-js@1.6.4
@@ -45,17 +47,13 @@ importers:
       solid-start: 0.2.7_27gc7vzskmjhkqbiwvxkwjebo4
       undici: 5.14.0
     devDependencies:
-      '@suzulabo/eslint-config': 0.0.4-test.1_j3g5y24ysrcsrvuk3zzl2q5wm4
-      eslint-plugin-solid: 0.9.1_typescript@4.9.4
+      eslint-plugin-solid: 0.9.1
       solid-start-static: 0.2.7_djmqe3pnr7f6zhxrtyrcu72qdm
-      typescript: 4.9.4
       vite: 4.0.0
 
   packages/solid-base:
     specifiers:
       '@storybook/html': ^6.5.14
-      '@suzulabo/eslint-config': 0.0.3
-      '@suzulabo/tsconfig': 0.0.2
       babel-preset-solid: ^1.6.3
       eslint-plugin-solid: ^0.9.1
       solid-js: ^1.6.4
@@ -65,8 +63,6 @@ importers:
       the-new-css-reset: 1.7.3
     devDependencies:
       '@storybook/html': 6.5.14
-      '@suzulabo/eslint-config': 0.0.3_eslint-plugin-solid@0.9.1
-      '@suzulabo/tsconfig': 0.0.2
       babel-preset-solid: 1.6.3
       eslint-plugin-solid: 0.9.1
       solid-js: 1.6.4
@@ -2665,23 +2661,7 @@ packages:
       resolve-from: 5.0.0
     dev: true
 
-  /@suzulabo/eslint-config/0.0.3_eslint-plugin-solid@0.9.1:
-    resolution: {integrity: sha512-qotQBx8Yp//nMyUMcVPQT8Um5gI74i5F60J1VoXqBqV83MJVsGLkFSp1n0yvrhqVCPVUvUOqwaxPG14Ybadr1w==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': '>=5'
-      '@typescript-eslint/parser': '>=5'
-      eslint: '>=8'
-      eslint-config-prettier: '>=8'
-      eslint-import-resolver-typescript: '>=3'
-      eslint-plugin-import: '>=2'
-      eslint-plugin-solid: '*'
-      prettier: '>=2.7'
-      typescript: '>=4.8'
-    dependencies:
-      eslint-plugin-solid: 0.9.1
-    dev: true
-
-  /@suzulabo/eslint-config/0.0.4-test.1_j3g5y24ysrcsrvuk3zzl2q5wm4:
+  /@suzulabo/eslint-config/0.0.4-test.1_j4bfmrb45ysinnemychwtgjwra:
     resolution: {integrity: sha512-C+yd1FbqZkxjc3HQKZEmaCVkalbnXuBXu0C9Qw6e3popk6g2+hFkKaiHa05cVY+v7/1x6GRbBiWEI0G3OsIXtA==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '>=5'
@@ -2694,7 +2674,13 @@ packages:
       prettier: '>=2.7'
       typescript: '>=4.8'
     dependencies:
-      eslint-plugin-solid: 0.9.1_typescript@4.9.4
+      '@typescript-eslint/eslint-plugin': 5.46.0_5mle7isnkfgjmrghnnczirv6iy
+      '@typescript-eslint/parser': 5.46.0_ha6vam6werchizxrnqvarmz2zu
+      eslint: 8.29.0
+      eslint-config-prettier: 8.5.0_eslint@8.29.0
+      eslint-import-resolver-typescript: 3.5.2_lt3hqehuojhfcbzgzqfngbtmrq
+      eslint-plugin-import: 2.26.0_hmezkefo75s2prddlqllgjxqc4
+      prettier: 2.8.1
       typescript: 4.9.4
     dev: true
 
@@ -2706,10 +2692,12 @@ packages:
       prettier: 2.8.1
     dev: true
 
-  /@suzulabo/tsconfig/0.0.2:
+  /@suzulabo/tsconfig/0.0.2_typescript@4.9.4:
     resolution: {integrity: sha512-OQ9rwsZciyHluI3YQ8lVvvHSTrUL7wPRz8r3A0NshBYp8N/8SzKb9rr6TIHC2slhYx5kD5lHoPgLi4Cc4387tw==}
     peerDependencies:
       typescript: '>=4.8'
+    dependencies:
+      typescript: 4.9.4
     dev: true
 
   /@types/cookie/0.5.1:
@@ -3017,25 +3005,6 @@ packages:
       eslint: 8.29.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0_eslint@8.29.0
-      semver: 7.3.8
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: true
-
-  /@typescript-eslint/utils/5.46.0_typescript@4.9.4:
-    resolution: {integrity: sha512-4O+Ps1CRDw+D+R40JYh5GlKLQERXRKW5yIQoNDpmXPJ+C7kaPF9R7GWl+PxGgXjB3PQCqsaaZUpZ9dG4U6DO7g==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      '@types/json-schema': 7.0.11
-      '@types/semver': 7.3.13
-      '@typescript-eslint/scope-manager': 5.46.0
-      '@typescript-eslint/types': 5.46.0
-      '@typescript-eslint/typescript-estree': 5.46.0_typescript@4.9.4
-      eslint-scope: 5.1.1
-      eslint-utils: 3.0.0
       semver: 7.3.8
     transitivePeerDependencies:
       - supports-color
@@ -5298,23 +5267,6 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       '@typescript-eslint/utils': 5.46.0
-      is-html: 2.0.0
-      jsx-ast-utils: 3.3.3
-      kebab-case: 1.0.2
-      known-css-properties: 0.24.0
-      style-to-object: 0.3.0
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: true
-
-  /eslint-plugin-solid/0.9.1_typescript@4.9.4:
-    resolution: {integrity: sha512-2pkdVRG2pOpXjbBn1VhRlxc0NcMViB5xQtjNPX3IiovJ4q1fuLHe9eqVOMeDYiHt2xsajq3R6t5reN6Qv8DAEA==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      '@typescript-eslint/utils': 5.46.0_typescript@4.9.4
       is-html: 2.0.0
       jsx-ast-utils: 3.3.3
       kebab-case: 1.0.2

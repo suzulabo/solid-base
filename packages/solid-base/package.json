@@ -32,8 +32,6 @@
   },
   "devDependencies": {
     "@storybook/html": "^6.5.14",
-    "@suzulabo/eslint-config": "0.0.3",
-    "@suzulabo/tsconfig": "0.0.2",
     "babel-preset-solid": "^1.6.3",
     "eslint-plugin-solid": "^0.9.1",
     "solid-js": "^1.6.4",

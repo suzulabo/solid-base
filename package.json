@@ -12,7 +12,9 @@
     "build": "pnpm -r run build"
   },
   "devDependencies": {
+    "@suzulabo/eslint-config": "0.0.4-test.1",
     "@suzulabo/prettier-config": "^0.0.2",
+    "@suzulabo/tsconfig": "^0.0.2",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
     "eslint": "^8.29.0",
