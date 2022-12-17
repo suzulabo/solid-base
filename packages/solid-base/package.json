@@ -20,6 +20,7 @@
   },
   "main": "src/index.ts",
   "files": [
+    "tsconfig.json",
     "src/*",
     "!**/*.stories.tsx"
   ],
@@ -34,12 +35,14 @@
     "@storybook/html": "^6.5.14",
     "babel-preset-solid": "^1.6.3",
     "solid-js": "^1.6.5",
-    "storybook-dark-mode": "^2.0.4"
+    "storybook-dark-mode": "^2.0.4",
+    "typescript-plugin-css-modules": "^4.1.1"
   },
   "dependencies": {
     "the-new-css-reset": "^1.7.3"
   },
   "peerDependencies": {
-    "solid-js": ">=1.6"
+    "solid-js": ">=1.6",
+    "typescript-plugin-css-modules": ">=4.1.1"
   }
 }
