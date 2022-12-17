@@ -1,7 +1,8 @@
-import type { ParentComponent } from 'solid-js';
+import { JSX, ParentComponent, splitProps } from 'solid-js';
 
-const Box: ParentComponent = (props) => {
-  return <div {...props}>{props.children}</div>;
+const Box: ParentComponent<JSX.HTMLAttributes<HTMLDivElement>> = (props) => {
+  const [parent, base] = splitProps(props, ['children']);
+  return <div {...base}>{parent.children}</div>;
 };
 
 export default Box;

@@ -19,6 +19,10 @@
     "node": "=16"
   },
   "main": "src/index.ts",
+  "files": [
+    "src/*",
+    "!**/*.stories.tsx"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -32,7 +36,7 @@
     "@suzulabo/tsconfig": "0.0.2",
     "babel-preset-solid": "^1.6.3",
     "eslint-plugin-solid": "^0.9.1",
-    "solid-js": "1.6.3",
+    "solid-js": "^1.6.4",
     "storybook-dark-mode": "^2.0.4"
   },
   "dependencies": {

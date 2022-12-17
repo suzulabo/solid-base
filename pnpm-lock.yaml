@@ -28,8 +28,9 @@ importers:
     specifiers:
       '@solidjs/meta': ^0.28.2
       '@solidjs/router': ^0.5.1
-      '@suzulabo/eslint-config': 0.0.3
+      '@suzulabo/eslint-config': 0.0.4-test.1
       '@suzulabo/solid-base': link:../solid-base
+      eslint-plugin-solid: ^0.9.1
       solid-js: ^1.6.4
       solid-start: ^0.2.7
       solid-start-static: ^0.2.7
@@ -44,7 +45,8 @@ importers:
       solid-start: 0.2.7_27gc7vzskmjhkqbiwvxkwjebo4
       undici: 5.14.0
     devDependencies:
-      '@suzulabo/eslint-config': 0.0.3_typescript@4.9.4
+      '@suzulabo/eslint-config': 0.0.4-test.1_j3g5y24ysrcsrvuk3zzl2q5wm4
+      eslint-plugin-solid: 0.9.1_typescript@4.9.4
       solid-start-static: 0.2.7_djmqe3pnr7f6zhxrtyrcu72qdm
       typescript: 4.9.4
       vite: 4.0.0
@@ -56,7 +58,7 @@ importers:
       '@suzulabo/tsconfig': 0.0.2
       babel-preset-solid: ^1.6.3
       eslint-plugin-solid: ^0.9.1
-      solid-js: 1.6.3
+      solid-js: ^1.6.4
       storybook-dark-mode: ^2.0.4
       the-new-css-reset: ^1.7.3
     dependencies:
@@ -67,7 +69,7 @@ importers:
       '@suzulabo/tsconfig': 0.0.2
       babel-preset-solid: 1.6.3
       eslint-plugin-solid: 0.9.1
-      solid-js: 1.6.3
+      solid-js: 1.6.4
       storybook-dark-mode: 2.0.4
 
 packages:
@@ -2679,8 +2681,8 @@ packages:
       eslint-plugin-solid: 0.9.1
     dev: true
 
-  /@suzulabo/eslint-config/0.0.3_typescript@4.9.4:
-    resolution: {integrity: sha512-qotQBx8Yp//nMyUMcVPQT8Um5gI74i5F60J1VoXqBqV83MJVsGLkFSp1n0yvrhqVCPVUvUOqwaxPG14Ybadr1w==}
+  /@suzulabo/eslint-config/0.0.4-test.1_j3g5y24ysrcsrvuk3zzl2q5wm4:
+    resolution: {integrity: sha512-C+yd1FbqZkxjc3HQKZEmaCVkalbnXuBXu0C9Qw6e3popk6g2+hFkKaiHa05cVY+v7/1x6GRbBiWEI0G3OsIXtA==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '>=5'
       '@typescript-eslint/parser': '>=5'
@@ -2692,6 +2694,7 @@ packages:
       prettier: '>=2.7'
       typescript: '>=4.8'
     dependencies:
+      eslint-plugin-solid: 0.9.1_typescript@4.9.4
       typescript: 4.9.4
     dev: true
 
@@ -3014,6 +3017,25 @@ packages:
       eslint: 8.29.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0_eslint@8.29.0
+      semver: 7.3.8
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /@typescript-eslint/utils/5.46.0_typescript@4.9.4:
+    resolution: {integrity: sha512-4O+Ps1CRDw+D+R40JYh5GlKLQERXRKW5yIQoNDpmXPJ+C7kaPF9R7GWl+PxGgXjB3PQCqsaaZUpZ9dG4U6DO7g==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@types/json-schema': 7.0.11
+      '@types/semver': 7.3.13
+      '@typescript-eslint/scope-manager': 5.46.0
+      '@typescript-eslint/types': 5.46.0
+      '@typescript-eslint/typescript-estree': 5.46.0_typescript@4.9.4
+      eslint-scope: 5.1.1
+      eslint-utils: 3.0.0
       semver: 7.3.8
     transitivePeerDependencies:
       - supports-color
@@ -5276,6 +5298,23 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       '@typescript-eslint/utils': 5.46.0
+      is-html: 2.0.0
+      jsx-ast-utils: 3.3.3
+      kebab-case: 1.0.2
+      known-css-properties: 0.24.0
+      style-to-object: 0.3.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /eslint-plugin-solid/0.9.1_typescript@4.9.4:
+    resolution: {integrity: sha512-2pkdVRG2pOpXjbBn1VhRlxc0NcMViB5xQtjNPX3IiovJ4q1fuLHe9eqVOMeDYiHt2xsajq3R6t5reN6Qv8DAEA==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.46.0_typescript@4.9.4
       is-html: 2.0.0
       jsx-ast-utils: 3.3.3
       kebab-case: 1.0.2
@@ -9148,12 +9187,6 @@ packages:
       use: 3.1.1
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /solid-js/1.6.3:
-    resolution: {integrity: sha512-YoieThdhAKt83O86+DjpKXNlVSU5JYdi21RdYqiEIsWxahOphiAfao8e/zRTLyZEM5ZgyZ3ZHPPgW1HO5537Rw==}
-    dependencies:
-      csstype: 3.1.1
     dev: true
 
   /solid-js/1.6.4:
