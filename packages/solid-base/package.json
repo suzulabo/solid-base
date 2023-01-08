@@ -34,6 +34,7 @@
   "devDependencies": {
     "@storybook/html": "7.0.0-beta.20",
     "@storybook/html-vite": "7.0.0-alpha.58",
+    "@storybook/types": "7.0.0-alpha.44",
     "solid-js": "^1.6.5",
     "storybook": "7.0.0-beta.20",
     "storybook-dark-mode": "^2.0.4",

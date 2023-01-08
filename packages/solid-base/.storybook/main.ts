@@ -1,4 +1,6 @@
-module.exports = {
+import type { StorybookConfig } from '@storybook/types';
+
+const config: StorybookConfig = {
   stories: ['../src/components/**/*.stories.tsx'],
   addons: ['storybook-dark-mode'],
   framework: {
@@ -6,3 +8,5 @@ module.exports = {
     options: {},
   },
 };
+
+export default config;
