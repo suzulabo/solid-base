@@ -11,3 +11,17 @@ export const Default = () => {
     </Blink>
   );
 };
+
+export const UserClass = () => {
+  return (
+    <>
+      <style>
+        {`.red {
+        color: red;
+      }`}
+      </style>
+      <Blink class="red">class</Blink>
+      <Blink classList={{ red: true }}>classList</Blink>
+    </>
+  );
+};
