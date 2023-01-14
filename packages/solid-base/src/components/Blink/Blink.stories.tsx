@@ -1,4 +1,3 @@
-import Box from '../Box/Box';
 import Blink from './Blink';
 
 export default {
@@ -8,7 +7,7 @@ export default {
 export const Default = () => {
   return (
     <Blink>
-      <Box style={{ 'font-size': '100px' }}>Hello</Box>
+      <div style={{ 'font-size': '100px' }}>Hello</div>
     </Blink>
   );
 };
