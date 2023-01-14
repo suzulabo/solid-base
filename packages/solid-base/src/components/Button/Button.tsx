@@ -4,7 +4,10 @@ import type { JSX, ParentComponent } from 'solid-js';
 
 const Button: ParentComponent<JSX.IntrinsicElements['button']> = (props) => {
   return (
-    <button {...props} class={styles.Button}>
+    <button
+      {...props}
+      classList={{ [styles.Button]: true, ...props.classList }}
+    >
       {props.children}
     </button>
   );
