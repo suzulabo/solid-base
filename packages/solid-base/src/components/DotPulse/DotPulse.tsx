@@ -1,16 +1,15 @@
-import { VoidComponent, mergeProps } from 'solid-js';
-
+import { mergeClass } from '../../utils/mergeClass';
 import styles from './DotPulse.module.css';
 
+import type { VoidComponent } from 'solid-js';
+
 type Props = {
-  size?: string;
+  class?: string;
 };
 
-const DotPulse: VoidComponent<Props> = (_props) => {
-  const props = mergeProps({ size: '40px' }, _props);
-
+const DotPulse: VoidComponent<Props> = (props) => {
   return (
-    <div class={styles['dot-pulse']} style={{ '--uib-size': props.size }}>
+    <div class={mergeClass(styles['dot-pulse'], props.class)}>
       <div class={styles['dot-pulse__dot']} />
     </div>
   );

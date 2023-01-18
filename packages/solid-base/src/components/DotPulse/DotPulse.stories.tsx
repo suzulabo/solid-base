@@ -14,8 +14,15 @@ export const Default = () => {
 
 export const Large = () => {
   return (
-    <div style={{ margin: '100px' }}>
-      <DotPulse size="100px" />
-    </div>
+    <>
+      <style>
+        {`.large {
+          --uib-size: 100px;
+      }`}
+      </style>
+      <div style={{ margin: '100px' }}>
+        <DotPulse class="large" />
+      </div>
+    </>
   );
 };
