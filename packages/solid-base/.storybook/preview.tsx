@@ -1,7 +1,7 @@
 import BaseStyle from '../src/components/BaseStyle/BaseStyle';
 
 export const decorators = [
-  (Story) => {
+  (Story: Function) => {
     return (
       <div>
         <BaseStyle />

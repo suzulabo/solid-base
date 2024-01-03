@@ -1,4 +1,4 @@
-button {
+.Button {
   display: inline-block;
   border: 2px solid var(--color-border);
   border-radius: 10px;
@@ -7,14 +7,14 @@ button {
   width: max-content;
 }
 
-button:active {
+.Button:active {
   position: relative;
   top: 1px;
   left: 1px;
 }
 
 @media (hover: hover) {
-  button:hover:not(:disabled) {
+  .Button:hover:not(:disabled) {
     background-color: var(--color-hover);
     cursor: pointer;
   }

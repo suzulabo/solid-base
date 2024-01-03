@@ -2,8 +2,7 @@
   "extends": "@suzulabo/tsconfig",
   "compilerOptions": {
     "jsx": "preserve",
-    "jsxImportSource": "solid-js"
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+    "jsxImportSource": "solid-js",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  }
 }

@@ -19,26 +19,34 @@
     "node": "=16"
   },
   "main": "src/index.ts",
+  "files": [
+    "tsconfig.json",
+    "src/*",
+    "!**/*.stories.tsx"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook dev -p 6006",
     "dev": "pnpm run storybook",
-    "build": "build-storybook -o dist"
+    "build": "storybook build -o dist"
   },
   "devDependencies": {
-    "@storybook/html": "^6.5.14",
-    "@suzulabo/eslint-config": "0.0.3",
-    "@suzulabo/tsconfig": "0.0.2",
-    "babel-preset-solid": "^1.6.3",
-    "eslint-plugin-solid": "^0.9.1",
-    "solid-js": "1.6.3",
-    "storybook-dark-mode": "^2.0.4"
+    "@storybook/html": "7.0.0-beta.20",
+    "@storybook/html-vite": "7.0.0-alpha.58",
+    "@storybook/types": "7.0.0-alpha.44",
+    "solid-js": "^1.6.8",
+    "storybook": "7.0.0-beta.20",
+    "storybook-dark-mode": "^2.0.5",
+    "typescript-plugin-css-modules": "^4.1.1",
+    "vite": "4.0.4",
+    "vite-plugin-solid": "^2.5.0"
   },
   "dependencies": {
-    "the-new-css-reset": "^1.7.3"
+    "the-new-css-reset": "^1.8.2"
   },
   "peerDependencies": {
-    "solid-js": ">=1.6"
+    "solid-js": ">=1.6",
+    "typescript-plugin-css-modules": ">=4.1.1"
   }
 }
